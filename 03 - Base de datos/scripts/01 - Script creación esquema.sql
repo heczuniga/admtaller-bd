@@ -192,6 +192,7 @@ create table unidad_medida (
 create table usuario (
     id_usuario        tinyint not null auto_increment comment "El identificador único abstracto del usuario",
     login             varchar(40) not null comment "El login del usuario",
+    password          varchar(40) not null comment "La contraseña del usuario",
     primer_apellido   varchar(20) not null comment "El primer apellido del usuario",
     segundo_apellido  varchar(20) comment "El segundo apellido del usuario",
     nombre            varchar(20) not null comment "El nombre del usuario",

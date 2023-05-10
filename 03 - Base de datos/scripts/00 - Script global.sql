@@ -192,6 +192,7 @@ create table unidad_medida (
 create table usuario (
     id_usuario        tinyint not null auto_increment comment "El identificador único abstracto del usuario",
     login             varchar(40) not null comment "El login del usuario",
+    password          varchar(40) not null comment "La contraseña del usuario",
     primer_apellido   varchar(20) not null comment "El primer apellido del usuario",
     segundo_apellido  varchar(20) comment "El segundo apellido del usuario",
     nombre            varchar(20) not null comment "El nombre del usuario",
@@ -1478,6 +1479,7 @@ commit;
 insert into usuario (
 	id_usuario,
 	login,
+	password,
 	primer_apellido,
 	segundo_apellido,
 	nombre,
@@ -1487,6 +1489,7 @@ insert into usuario (
 values (
 	1,
 	'admin',
+	'None',
 	'Administrador',
 	'',
 	'del sistema',
@@ -1497,6 +1500,7 @@ values (
 insert into usuario (
 	id_usuario,
 	login,
+	password,
 	primer_apellido,
 	segundo_apellido,
 	nombre,
@@ -1506,6 +1510,7 @@ insert into usuario (
 values (
 	2,
 	'jmoya@duoc.cl',
+	'None',
 	'Moya',
 	'Plaza',
 	'Jéssica',
@@ -1516,6 +1521,7 @@ values (
 insert into usuario (
 	id_usuario,
 	login,
+	password,
 	primer_apellido,
 	segundo_apellido,
 	nombre,
@@ -1525,6 +1531,7 @@ insert into usuario (
 values (
 	3,
 	'maalvarez@duoc.cl',
+	'None',
 	'Álvarez',
 	'Román',
 	'Marco',
@@ -1535,6 +1542,7 @@ values (
 insert into usuario (
 	id_usuario,
 	login,
+	password,
 	primer_apellido,
 	segundo_apellido,
 	nombre,
@@ -1544,6 +1552,7 @@ insert into usuario (
 values (
 	4,
 	'c.gonzalez6@profesor.duoc.cl',
+	'None',
 	'González',
 	'Figueroa',
 	'Cristian',
@@ -1554,6 +1563,7 @@ values (
 insert into usuario (
 	id_usuario,
 	login,
+	password,
 	primer_apellido,
 	segundo_apellido,
 	nombre,
@@ -1563,6 +1573,7 @@ insert into usuario (
 values (
 	5,
 	'r.ceura@profesor.duoc.cl',
+	'None',
 	'Ceura',
 	'Vergara',
 	'Raúl',
@@ -1573,6 +1584,7 @@ values (
 insert into usuario (
 	id_usuario,
 	login,
+	password,
 	primer_apellido,
 	segundo_apellido,
 	nombre,
@@ -1582,6 +1594,7 @@ insert into usuario (
 values (
 	6,
 	'hec.fonseca@profesor.duoc.cl',
+	'None',
 	'Fonseca',
 	'Castillo',
 	'Héctor',
@@ -1592,6 +1605,7 @@ values (
 insert into usuario (
 	id_usuario,
 	login,
+	password,
 	primer_apellido,
 	segundo_apellido,
 	nombre,
@@ -1601,6 +1615,7 @@ insert into usuario (
 values (
 	7,
 	'xi.castro@profesor.duoc.cl',
+	'None',
 	'Castro',
 	'Arancibia',
 	'Ximena',
@@ -1611,6 +1626,7 @@ values (
 insert into usuario (
 	id_usuario,
 	login,
+	password,
 	primer_apellido,
 	segundo_apellido,
 	nombre,
@@ -1620,6 +1636,7 @@ insert into usuario (
 values (
 	8,
 	'c.valenzuelair@profesor.duoc.cl',
+	'None',
 	'Valenzuela',
 	'Irrazabal',
 	'Carolina',
@@ -1630,6 +1647,7 @@ values (
 insert into usuario (
 	id_usuario,
 	login,
+	password,
 	primer_apellido,
 	segundo_apellido,
 	nombre,
@@ -1639,6 +1657,7 @@ insert into usuario (
 values (
 	9,
 	'sa.navarret@profesor.duoc.cl',
+	'None',
 	'Navarrete',
 	'Bustamante',
 	'Sandra',
@@ -1649,6 +1668,7 @@ values (
 insert into usuario (
 	id_usuario,
 	login,
+	password,
 	primer_apellido,
 	segundo_apellido,
 	nombre,
@@ -1658,6 +1678,7 @@ insert into usuario (
 values (
 	10,
 	'fabi.arancibia@profesor.duoc.cl',
+	'None',
 	'Arancibia',
 	'Severino',
 	'Fabián',
@@ -1668,6 +1689,7 @@ values (
 insert into usuario (
 	id_usuario,
 	login,
+	password,
 	primer_apellido,
 	segundo_apellido,
 	nombre,
@@ -1677,6 +1699,7 @@ insert into usuario (
 values (
 	11,
 	'roci.guzman@profesor.duoc.cl',
+	'None',
 	'Guzmán',
 	'Acuña',
 	'Rocío',
@@ -1687,6 +1710,7 @@ values (
 insert into usuario (
 	id_usuario,
 	login,
+	password,
 	primer_apellido,
 	segundo_apellido,
 	nombre,
@@ -1696,6 +1720,7 @@ insert into usuario (
 values (
 	12,
 	'al.camposa@profesor.duoc.cl',
+	'None',
 	'Campos',
 	'Acuña',
 	'Alejandra',
@@ -1706,6 +1731,7 @@ values (
 insert into usuario (
 	id_usuario,
 	login,
+	password,
 	primer_apellido,
 	segundo_apellido,
 	nombre,
@@ -1715,6 +1741,7 @@ insert into usuario (
 values (
 	13,
 	'cr.madariagam@profesor.duoc.cl',
+	'None',
 	'Madariaga',
 	'Martínez',
 	'Cristian',
@@ -1725,6 +1752,7 @@ values (
 insert into usuario (
 	id_usuario,
 	login,
+	password,
 	primer_apellido,
 	segundo_apellido,
 	nombre,
@@ -1734,6 +1762,7 @@ insert into usuario (
 values (
 	14,
 	'i.inostroza@profesor.duoc.cl',
+	'None',
 	'Inostroza',
 	'Rodríguez',
 	'Isaac',
@@ -1744,6 +1773,7 @@ values (
 insert into usuario (
 	id_usuario,
 	login,
+	password,
 	primer_apellido,
 	segundo_apellido,
 	nombre,
@@ -1753,6 +1783,7 @@ insert into usuario (
 values (
 	15,
 	'v.fuentealbav@profesor.duoc.cl',
+	'None',
 	'Fuentealva',
 	'Vargas',
 	'Víctor',
@@ -1763,6 +1794,7 @@ values (
 insert into usuario (
 	id_usuario,
 	login,
+	password,
 	primer_apellido,
 	segundo_apellido,
 	nombre,
@@ -1772,6 +1804,7 @@ insert into usuario (
 values (
 	16,
 	'j.premolo@profesor.duoc.cl',
+	'None',
 	'Premolo',
 	'Yergues',
 	'Juan',
@@ -1782,6 +1815,7 @@ values (
 insert into usuario (
 	id_usuario,
 	login,
+	password,
 	primer_apellido,
 	segundo_apellido,
 	nombre,
@@ -1791,6 +1825,7 @@ insert into usuario (
 values (
 	17,
 	'car.perezz@profesor.duoc.cl',
+	'None',
 	'Pérez',
 	'Zúñiga',
 	'Carlos',
@@ -1801,6 +1836,7 @@ values (
 insert into usuario (
 	id_usuario,
 	login,
+	password,
 	primer_apellido,
 	segundo_apellido,
 	nombre,
@@ -1810,6 +1846,7 @@ insert into usuario (
 values (
 	18,
 	'de.reglas@profesor.duoc.cl',
+	'None',
 	'Reglas',
 	'Villagra',
 	'Deyanira',
@@ -1820,6 +1857,7 @@ values (
 insert into usuario (
 	id_usuario,
 	login,
+	password,
 	primer_apellido,
 	segundo_apellido,
 	nombre,
@@ -1829,6 +1867,7 @@ insert into usuario (
 values (
 	19,
 	'dmunita@duoc.cl',
+	'None',
 	'Munita',
 	'Toro',
 	'Daniela',
@@ -1839,6 +1878,7 @@ values (
 insert into usuario (
 	id_usuario,
 	login,
+	password,
 	primer_apellido,
 	segundo_apellido,
 	nombre,
@@ -1848,6 +1888,7 @@ insert into usuario (
 values (
 	20,
 	'pzamorano@duoc.cl',
+	'None',
 	'Zamorano',
 	'Moreno',
 	'Paola',
@@ -1858,6 +1899,7 @@ values (
 insert into usuario (
 	id_usuario,
 	login,
+	password,
 	primer_apellido,
 	segundo_apellido,
 	nombre,
@@ -1867,6 +1909,7 @@ insert into usuario (
 values (
 	21,
 	'j.enero@profesor.duoc.cl',
+	'None',
 	'Enero',
 	'Rivero',
 	'Juan Francisco',
@@ -1877,6 +1920,7 @@ values (
 insert into usuario (
 	id_usuario,
 	login,
+	password,
 	primer_apellido,
 	segundo_apellido,
 	nombre,
@@ -1886,6 +1930,7 @@ insert into usuario (
 values (
 	22,
 	'm.gutierrez2@profesor.duoc.cl',
+	'None',
 	'Gutierrez',
 	'Cortés',
 	'Mauricio',
