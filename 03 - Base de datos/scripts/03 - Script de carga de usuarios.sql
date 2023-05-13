@@ -6,8 +6,8 @@ insert into usuario (
 	password,
 	primer_apellido,
 	segundo_apellido,
-	nombre,
-	nombre_preferido,
+	nom,
+	nom_preferido,
 	cod_perfil,
 	cod_carrera)
 values (
@@ -27,8 +27,8 @@ insert into usuario (
 	password,
 	primer_apellido,
 	segundo_apellido,
-	nombre,
-	nombre_preferido,
+	nom,
+	nom_preferido,
 	cod_perfil,
 	cod_carrera)
 values (
@@ -48,8 +48,8 @@ insert into usuario (
 	password,
 	primer_apellido,
 	segundo_apellido,
-	nombre,
-	nombre_preferido,
+	nom,
+	nom_preferido,
 	cod_perfil,
 	cod_carrera)
 values (
@@ -69,8 +69,8 @@ insert into usuario (
 	password,
 	primer_apellido,
 	segundo_apellido,
-	nombre,
-	nombre_preferido,
+	nom,
+	nom_preferido,
 	cod_perfil,
 	cod_carrera)
 values (
@@ -90,8 +90,8 @@ insert into usuario (
 	password,
 	primer_apellido,
 	segundo_apellido,
-	nombre,
-	nombre_preferido,
+	nom,
+	nom_preferido,
 	cod_perfil,
 	cod_carrera)
 values (
@@ -111,8 +111,8 @@ insert into usuario (
 	password,
 	primer_apellido,
 	segundo_apellido,
-	nombre,
-	nombre_preferido,
+	nom,
+	nom_preferido,
 	cod_perfil,
 	cod_carrera)
 values (
@@ -132,8 +132,8 @@ insert into usuario (
 	password,
 	primer_apellido,
 	segundo_apellido,
-	nombre,
-	nombre_preferido,
+	nom,
+	nom_preferido,
 	cod_perfil,
 	cod_carrera)
 values (
@@ -153,8 +153,8 @@ insert into usuario (
 	password,
 	primer_apellido,
 	segundo_apellido,
-	nombre,
-	nombre_preferido,
+	nom,
+	nom_preferido,
 	cod_perfil,
 	cod_carrera)
 values (
@@ -174,8 +174,8 @@ insert into usuario (
 	password,
 	primer_apellido,
 	segundo_apellido,
-	nombre,
-	nombre_preferido,
+	nom,
+	nom_preferido,
 	cod_perfil,
 	cod_carrera)
 values (
@@ -195,8 +195,8 @@ insert into usuario (
 	password,
 	primer_apellido,
 	segundo_apellido,
-	nombre,
-	nombre_preferido,
+	nom,
+	nom_preferido,
 	cod_perfil,
 	cod_carrera)
 values (
@@ -216,8 +216,8 @@ insert into usuario (
 	password,
 	primer_apellido,
 	segundo_apellido,
-	nombre,
-	nombre_preferido,
+	nom,
+	nom_preferido,
 	cod_perfil,
 	cod_carrera)
 values (
@@ -237,8 +237,8 @@ insert into usuario (
 	password,
 	primer_apellido,
 	segundo_apellido,
-	nombre,
-	nombre_preferido,
+	nom,
+	nom_preferido,
 	cod_perfil,
 	cod_carrera)
 values (
@@ -258,8 +258,8 @@ insert into usuario (
 	password,
 	primer_apellido,
 	segundo_apellido,
-	nombre,
-	nombre_preferido,
+	nom,
+	nom_preferido,
 	cod_perfil,
 	cod_carrera)
 values (
@@ -279,8 +279,8 @@ insert into usuario (
 	password,
 	primer_apellido,
 	segundo_apellido,
-	nombre,
-	nombre_preferido,
+	nom,
+	nom_preferido,
 	cod_perfil,
 	cod_carrera)
 values (
@@ -300,8 +300,8 @@ insert into usuario (
 	password,
 	primer_apellido,
 	segundo_apellido,
-	nombre,
-	nombre_preferido,
+	nom,
+	nom_preferido,
 	cod_perfil,
 	cod_carrera)
 values (
@@ -321,8 +321,8 @@ insert into usuario (
 	password,
 	primer_apellido,
 	segundo_apellido,
-	nombre,
-	nombre_preferido,
+	nom,
+	nom_preferido,
 	cod_perfil,
 	cod_carrera)
 values (
@@ -342,8 +342,8 @@ insert into usuario (
 	password,
 	primer_apellido,
 	segundo_apellido,
-	nombre,
-	nombre_preferido,
+	nom,
+	nom_preferido,
 	cod_perfil,
 	cod_carrera)
 values (
@@ -363,8 +363,8 @@ insert into usuario (
 	password,
 	primer_apellido,
 	segundo_apellido,
-	nombre,
-	nombre_preferido,
+	nom,
+	nom_preferido,
 	cod_perfil,
 	cod_carrera)
 values (
@@ -384,8 +384,8 @@ insert into usuario (
 	password,
 	primer_apellido,
 	segundo_apellido,
-	nombre,
-	nombre_preferido,
+	nom,
+	nom_preferido,
 	cod_perfil,
 	cod_carrera)
 values (
@@ -405,8 +405,8 @@ insert into usuario (
 	password,
 	primer_apellido,
 	segundo_apellido,
-	nombre,
-	nombre_preferido,
+	nom,
+	nom_preferido,
 	cod_perfil,
 	cod_carrera)
 values (
@@ -426,8 +426,8 @@ insert into usuario (
 	password,
 	primer_apellido,
 	segundo_apellido,
-	nombre,
-	nombre_preferido,
+	nom,
+	nom_preferido,
 	cod_perfil,
 	cod_carrera)
 values (
@@ -447,8 +447,8 @@ insert into usuario (
 	password,
 	primer_apellido,
 	segundo_apellido,
-	nombre,
-	nombre_preferido,
+	nom,
+	nom_preferido,
 	cod_perfil,
 	cod_carrera)
 values (

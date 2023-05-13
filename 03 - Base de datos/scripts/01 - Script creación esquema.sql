@@ -38,7 +38,7 @@ drop table carrera cascade;
 
 drop table estado_proceso cascade;
 
-/* Fin sección de table */
+/* Fin sección drop table */
 
 /* Inicio sección create table */
 create table item_menu (
@@ -195,8 +195,8 @@ create table usuario (
     password          varchar(40) not null comment "La contraseña del usuario",
     primer_apellido   varchar(20) not null comment "El primer apellido del usuario",
     segundo_apellido  varchar(20) comment "El segundo apellido del usuario",
-    nombre            varchar(20) not null comment "El nombre del usuario",
-    nombre_preferido  varchar(20) comment "El nombre por el cual el usuario prefiere ser nombrado",
+    nom               varchar(20) not null comment "El nombre del usuario",
+    nom_preferido     varchar(20) comment "El nombre por el cual el usuario prefiere ser nombrado",
     cod_perfil        tinyint not null comment "El código del perfil del usuario",
     cod_carrera       tinyint comment "La carrera del usuario si es que es un docente",
     primary key (id_usuario)
