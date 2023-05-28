@@ -1,5 +1,7 @@
 
 /* Inicio sección drop table */
+drop table param cascade;
+
 drop table config_taller cascade;
 
 drop table agrupador cascade;
@@ -41,6 +43,13 @@ drop table estado_proceso cascade;
 /* Fin sección drop table */
 
 /* Inicio sección create table */
+create table param (
+    cod_param            tinyint not null comment "Código del parámetro del sistema",
+    nom_param            varchar(50) not null comment "Nombre del parámetro del sistema",
+    valor                varchar(50) comment "Valor del parámetro",
+    primary key (cod_param)
+) comment "Tabla que almacena los parámetros del sistema";
+
 create table item_menu (
     cod_item_menu        varchar(4) not null comment "Código del ítem de menú",
     nom_item_menu        varchar(50) not null comment "Nombre del ítem de menú",
@@ -192,7 +201,7 @@ create table unidad_medida (
 create table usuario (
     id_usuario        tinyint not null auto_increment comment "El identificador único abstracto del usuario",
     login             varchar(40) not null comment "El login del usuario",
-    password          varchar(40) not null comment "La contraseña del usuario",
+    hash_password     varchar(256) not null comment "La contraseña encriptada del del usuario",
     primer_apellido   varchar(20) not null comment "El primer apellido del usuario",
     segundo_apellido  varchar(20) comment "El segundo apellido del usuario",
     nom               varchar(20) not null comment "El nombre del usuario",

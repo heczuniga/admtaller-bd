@@ -1,4 +1,15 @@
 
+/* Inicio tabla: param */
+insert into param (
+	cod_param,
+	nom_param,
+	valor)
+values (
+	1,
+	'Año académico vigente',
+	'2023');
+/* Fin tabla: param */
+
 /* Inicio tabla: estado_proceso */
 insert into estado_proceso (
 	cod_estado_proceso,
