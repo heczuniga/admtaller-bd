@@ -1496,7 +1496,6 @@ values (
 commit;
 
 
-
 /* Inicio tabla: usuario */
 insert into usuario (
 	id_usuario,
@@ -1574,7 +1573,7 @@ insert into usuario (
 values (
 	4,
 	'c.gonzalez6@profesor.duoc.cl',
-	'6878baad9d3c064fa35754798a445810383a8914080097f9bf57fc69b736b86f19ece34f7f48af0425e6559c3daaec9654c7d8a4edcf80c8e90a336bc61e979a',
+	'dbb8d24a3166d17cd46539f4dca51ac945174b0ed8491859f690ddb24fe6cb74fbbf3338766d273903b8748da32c5a9c645ff0a2013c7412edc38b64cf8f2ec0',
 	'González',
 	'Figueroa',
 	'Cristian',
@@ -1595,7 +1594,7 @@ insert into usuario (
 values (
 	5,
 	'r.ceura@profesor.duoc.cl',
-	'7b0b1427b8a97db8f5c3fa7d2f597e5e836a9f6b9f552f6653ec4c8d29451a7e12af3fe79ae00c0c8a96e2833426b827b7cdaa2a525b59aff8b8f9623c519cbd',
+	'dbb8d24a3166d17cd46539f4dca51ac945174b0ed8491859f690ddb24fe6cb74fbbf3338766d273903b8748da32c5a9c645ff0a2013c7412edc38b64cf8f2ec0',
 	'Ceura',
 	'Vergara',
 	'Raúl',
@@ -1616,7 +1615,7 @@ insert into usuario (
 values (
 	6,
 	'hec.fonseca@profesor.duoc.cl',
-	'0b8ad5bf39b2db2a4d54625642d3ef3bff6760794d7d9c5a641888db830479938540f9cc958171af234faac0b67aeb500083ea1d7a6d8c96d107a5b6749fa190',
+	'dbb8d24a3166d17cd46539f4dca51ac945174b0ed8491859f690ddb24fe6cb74fbbf3338766d273903b8748da32c5a9c645ff0a2013c7412edc38b64cf8f2ec0',
 	'Fonseca',
 	'Castillo',
 	'Héctor',
@@ -1637,7 +1636,7 @@ insert into usuario (
 values (
 	7,
 	'xi.castro@profesor.duoc.cl',
-	'2a911471076d524988bf8512f67c215bbec5a40de9dd4ef2c2fd5c3d6cca2b4e12408b796498c28f052b922599b9afe6aa499062b00cf620d3bcab5ac3bbd850',
+	'dbb8d24a3166d17cd46539f4dca51ac945174b0ed8491859f690ddb24fe6cb74fbbf3338766d273903b8748da32c5a9c645ff0a2013c7412edc38b64cf8f2ec0',
 	'Castro',
 	'Arancibia',
 	'Ximena',
@@ -1658,7 +1657,7 @@ insert into usuario (
 values (
 	8,
 	'c.valenzuelair@profesor.duoc.cl',
-	'2a911471076d524988bf8512f67c215bbec5a40de9dd4ef2c2fd5c3d6cca2b4e12408b796498c28f052b922599b9afe6aa499062b00cf620d3bcab5ac3bbd850',
+	'dbb8d24a3166d17cd46539f4dca51ac945174b0ed8491859f690ddb24fe6cb74fbbf3338766d273903b8748da32c5a9c645ff0a2013c7412edc38b64cf8f2ec0',
 	'Valenzuela',
 	'Irrazabal',
 	'Carolina',
@@ -1679,7 +1678,7 @@ insert into usuario (
 values (
 	9,
 	'sa.navarret@profesor.duoc.cl',
-	'2a911471076d524988bf8512f67c215bbec5a40de9dd4ef2c2fd5c3d6cca2b4e12408b796498c28f052b922599b9afe6aa499062b00cf620d3bcab5ac3bbd850',
+	'dbb8d24a3166d17cd46539f4dca51ac945174b0ed8491859f690ddb24fe6cb74fbbf3338766d273903b8748da32c5a9c645ff0a2013c7412edc38b64cf8f2ec0',
 	'Navarrete',
 	'Bustamante',
 	'Sandra',
@@ -1700,7 +1699,7 @@ insert into usuario (
 values (
 	10,
 	'fabi.arancibia@profesor.duoc.cl',
-	'2a911471076d524988bf8512f67c215bbec5a40de9dd4ef2c2fd5c3d6cca2b4e12408b796498c28f052b922599b9afe6aa499062b00cf620d3bcab5ac3bbd850',
+	'dbb8d24a3166d17cd46539f4dca51ac945174b0ed8491859f690ddb24fe6cb74fbbf3338766d273903b8748da32c5a9c645ff0a2013c7412edc38b64cf8f2ec0',
 	'Arancibia',
 	'Severino',
 	'Fabián',
@@ -1721,7 +1720,7 @@ insert into usuario (
 values (
 	11,
 	'roci.guzman@profesor.duoc.cl',
-	'2a911471076d524988bf8512f67c215bbec5a40de9dd4ef2c2fd5c3d6cca2b4e12408b796498c28f052b922599b9afe6aa499062b00cf620d3bcab5ac3bbd850',
+	'dbb8d24a3166d17cd46539f4dca51ac945174b0ed8491859f690ddb24fe6cb74fbbf3338766d273903b8748da32c5a9c645ff0a2013c7412edc38b64cf8f2ec0',
 	'Guzmán',
 	'Acuña',
 	'Rocío',
@@ -1742,7 +1741,7 @@ insert into usuario (
 values (
 	12,
 	'al.camposa@profesor.duoc.cl',
-	'2a911471076d524988bf8512f67c215bbec5a40de9dd4ef2c2fd5c3d6cca2b4e12408b796498c28f052b922599b9afe6aa499062b00cf620d3bcab5ac3bbd850',
+	'dbb8d24a3166d17cd46539f4dca51ac945174b0ed8491859f690ddb24fe6cb74fbbf3338766d273903b8748da32c5a9c645ff0a2013c7412edc38b64cf8f2ec0',
 	'Campos',
 	'Acuña',
 	'Alejandra',
@@ -1763,7 +1762,7 @@ insert into usuario (
 values (
 	13,
 	'cr.madariagam@profesor.duoc.cl',
-	'2a911471076d524988bf8512f67c215bbec5a40de9dd4ef2c2fd5c3d6cca2b4e12408b796498c28f052b922599b9afe6aa499062b00cf620d3bcab5ac3bbd850',
+	'dbb8d24a3166d17cd46539f4dca51ac945174b0ed8491859f690ddb24fe6cb74fbbf3338766d273903b8748da32c5a9c645ff0a2013c7412edc38b64cf8f2ec0',
 	'Madariaga',
 	'Martínez',
 	'Cristian',
@@ -1784,7 +1783,7 @@ insert into usuario (
 values (
 	14,
 	'i.inostroza@profesor.duoc.cl',
-	'2a911471076d524988bf8512f67c215bbec5a40de9dd4ef2c2fd5c3d6cca2b4e12408b796498c28f052b922599b9afe6aa499062b00cf620d3bcab5ac3bbd850',
+	'dbb8d24a3166d17cd46539f4dca51ac945174b0ed8491859f690ddb24fe6cb74fbbf3338766d273903b8748da32c5a9c645ff0a2013c7412edc38b64cf8f2ec0',
 	'Inostroza',
 	'Rodríguez',
 	'Isaac',
@@ -1805,7 +1804,7 @@ insert into usuario (
 values (
 	15,
 	'v.fuentealbav@profesor.duoc.cl',
-	'2a911471076d524988bf8512f67c215bbec5a40de9dd4ef2c2fd5c3d6cca2b4e12408b796498c28f052b922599b9afe6aa499062b00cf620d3bcab5ac3bbd850',
+	'dbb8d24a3166d17cd46539f4dca51ac945174b0ed8491859f690ddb24fe6cb74fbbf3338766d273903b8748da32c5a9c645ff0a2013c7412edc38b64cf8f2ec0',
 	'Fuentealva',
 	'Vargas',
 	'Víctor',
@@ -1826,7 +1825,7 @@ insert into usuario (
 values (
 	16,
 	'j.premolo@profesor.duoc.cl',
-	'2a911471076d524988bf8512f67c215bbec5a40de9dd4ef2c2fd5c3d6cca2b4e12408b796498c28f052b922599b9afe6aa499062b00cf620d3bcab5ac3bbd850',
+	'dbb8d24a3166d17cd46539f4dca51ac945174b0ed8491859f690ddb24fe6cb74fbbf3338766d273903b8748da32c5a9c645ff0a2013c7412edc38b64cf8f2ec0',
 	'Premolo',
 	'Yergues',
 	'Juan',
@@ -1847,7 +1846,7 @@ insert into usuario (
 values (
 	17,
 	'car.perezz@profesor.duoc.cl',
-	'2a911471076d524988bf8512f67c215bbec5a40de9dd4ef2c2fd5c3d6cca2b4e12408b796498c28f052b922599b9afe6aa499062b00cf620d3bcab5ac3bbd850',
+	'dbb8d24a3166d17cd46539f4dca51ac945174b0ed8491859f690ddb24fe6cb74fbbf3338766d273903b8748da32c5a9c645ff0a2013c7412edc38b64cf8f2ec0',
 	'Pérez',
 	'Zúñiga',
 	'Carlos',
@@ -1868,7 +1867,7 @@ insert into usuario (
 values (
 	18,
 	'de.reglas@profesor.duoc.cl',
-	'2a911471076d524988bf8512f67c215bbec5a40de9dd4ef2c2fd5c3d6cca2b4e12408b796498c28f052b922599b9afe6aa499062b00cf620d3bcab5ac3bbd850',
+	'dbb8d24a3166d17cd46539f4dca51ac945174b0ed8491859f690ddb24fe6cb74fbbf3338766d273903b8748da32c5a9c645ff0a2013c7412edc38b64cf8f2ec0',
 	'Reglas',
 	'Villagra',
 	'Deyanira',
@@ -1889,7 +1888,7 @@ insert into usuario (
 values (
 	19,
 	'dmunita@duoc.cl',
-	'2a911471076d524988bf8512f67c215bbec5a40de9dd4ef2c2fd5c3d6cca2b4e12408b796498c28f052b922599b9afe6aa499062b00cf620d3bcab5ac3bbd850',
+	'dbb8d24a3166d17cd46539f4dca51ac945174b0ed8491859f690ddb24fe6cb74fbbf3338766d273903b8748da32c5a9c645ff0a2013c7412edc38b64cf8f2ec0',
 	'Munita',
 	'Toro',
 	'Daniela',
@@ -1910,7 +1909,7 @@ insert into usuario (
 values (
 	20,
 	'pzamorano@duoc.cl',
-	'2a911471076d524988bf8512f67c215bbec5a40de9dd4ef2c2fd5c3d6cca2b4e12408b796498c28f052b922599b9afe6aa499062b00cf620d3bcab5ac3bbd850',
+	'dbb8d24a3166d17cd46539f4dca51ac945174b0ed8491859f690ddb24fe6cb74fbbf3338766d273903b8748da32c5a9c645ff0a2013c7412edc38b64cf8f2ec0',
 	'Zamorano',
 	'Moreno',
 	'Paola',
@@ -1931,7 +1930,7 @@ insert into usuario (
 values (
 	21,
 	'j.enero@profesor.duoc.cl',
-	'2a911471076d524988bf8512f67c215bbec5a40de9dd4ef2c2fd5c3d6cca2b4e12408b796498c28f052b922599b9afe6aa499062b00cf620d3bcab5ac3bbd850',
+	'dbb8d24a3166d17cd46539f4dca51ac945174b0ed8491859f690ddb24fe6cb74fbbf3338766d273903b8748da32c5a9c645ff0a2013c7412edc38b64cf8f2ec0',
 	'Enero',
 	'Rivero',
 	'Juan Francisco',
@@ -1952,7 +1951,7 @@ insert into usuario (
 values (
 	22,
 	'm.gutierrez2@profesor.duoc.cl',
-	'2a911471076d524988bf8512f67c215bbec5a40de9dd4ef2c2fd5c3d6cca2b4e12408b796498c28f052b922599b9afe6aa499062b00cf620d3bcab5ac3bbd850',
+	'dbb8d24a3166d17cd46539f4dca51ac945174b0ed8491859f690ddb24fe6cb74fbbf3338766d273903b8748da32c5a9c645ff0a2013c7412edc38b64cf8f2ec0',
 	'Gutierrez',
 	'Cortés',
 	'Mauricio',
@@ -1962,6 +1961,7 @@ values (
 /* Fin tabla: usuario */
 
 commit;
+
 
 
 /* Inicio tabla: taller */
