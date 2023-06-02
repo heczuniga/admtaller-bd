@@ -29,3 +29,22 @@ select *
 from taller
 where sigla = "ABT3131"
 order by semana asc
+
+
+select u.id_usuario as id_usuario,
+    u.login as login,
+    null as hash_password,
+    u.primer_apellido as primer_apellido,
+    u.segundo_apellido as segundo_apellido,
+    u.nom as nom,
+    u.nom_preferido as nom_preferido,
+    u.cod_perfil as cod_perfil,
+    u.cod_carrera as cod_carrera,
+    p.nom_perfil as nom_perfil,
+    c.nom_carrera as nom_carrera
+from usuario u,
+	perfil p,
+    carrera c
+where u.cod_perfil = p.cod_perfil and
+    u.cod_carrera = c.cod_carrera and
+    id_usuario = 2;
