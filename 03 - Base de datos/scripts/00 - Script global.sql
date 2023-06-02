@@ -1510,7 +1510,7 @@ insert into usuario (
 values (
 	1,
 	'admin@duoc.cl',
-	'89b3bd6083da4e8c1b831b66a68a896cf77323a1a615afe859083d2c9ef9b6193e9d48ba4ac55eba00a60b47d967465c96fcc49b5ada64cca3c3fb36b35ac53b',
+    'c16fd958b85a1c94d872c219ea06ce8e80223239b1fcefb92ad978445ef095507244be44caae1d766e277b072c184cb3ffe4d0610716e989b2fe5a7c97bf3144', /* SD:72-03 */
 	'Administrador',
 	'',
 	'del sistema',
