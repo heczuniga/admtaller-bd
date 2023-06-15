@@ -26,157 +26,20 @@ values (
 	'Registrado');
 /* Fin tabla: estado_proceso */
 
-/* Inicio tabla: tipo_agrupador */
-insert into tipo_agrupador (
-	cod_tipo_agrupador,
-	nom_tipo_agrupador)
-values (
-	0,
-	'(Sin tipo de agrupación)');
-
-insert into tipo_agrupador (
-	cod_tipo_agrupador,
-	nom_tipo_agrupador)
-values (
-	1,
-	'Almuerzo de servicio');
-/* Fin tabla: tipo_agrupador */
-
 /* Inicio tabla: agrupador */
 insert into agrupador (
 	cod_agrupador,
-	nom_agrupador,
-	cod_tipo_agrupador)
-values (
-	0,
-	'(Sin agrupación)',
-	0);
-
-insert into agrupador (
-	cod_agrupador,
-	nom_agrupador,
-	cod_tipo_agrupador)
+	nom_agrupador)
 values (
 	1,
-	'Menú: charquicán y huevo frito, ensalada y postre',
-	1);
+	'Taller');
 
 insert into agrupador (
 	cod_agrupador,
-	nom_agrupador,
-	cod_tipo_agrupador)
+	nom_agrupador)
 values (
 	2,
-	'Menú: garbanzos con longaniza, ensalada y postre',
-	1);
-
-insert into agrupador (
-	cod_agrupador,
-	nom_agrupador,
-	cod_tipo_agrupador)
-values (
-	3,
-	'Menú: lentejas con gorda, ensalada y postre',
-	1);
-
-insert into agrupador (
-	cod_agrupador,
-	nom_agrupador,
-	cod_tipo_agrupador)
-values (
-	4,
-	'Menú: pescado horno, puré, ensalada y postre',
-	1);
-
-insert into agrupador (
-	cod_agrupador,
-	nom_agrupador,
-	cod_tipo_agrupador)
-values (
-	5,
-	'Menú: pizza y postre',
-	1);
-
-insert into agrupador (
-	cod_agrupador,
-	nom_agrupador,
-	cod_tipo_agrupador)
-values (
-	6,
-	'Menú: pollo arvejado y papas doradas, ensalada y postre',
-	1);
-
-insert into agrupador (
-	cod_agrupador,
-	nom_agrupador,
-	cod_tipo_agrupador)
-values (
-	7,
-	'Menú: pollo asado con puré de papas, ensalada y postre',
-	1);
-
-insert into agrupador (
-	cod_agrupador,
-	nom_agrupador,
-	cod_tipo_agrupador)
-values (
-	8,
-	'Menú: Pastel de papa y postre',
-	1);
-
-insert into agrupador (
-	cod_agrupador,
-	nom_agrupador,
-	cod_tipo_agrupador)
-values (
-	9,
-	'Menú: Arroz chaufa de pollo y postre',
-	1);
-
-insert into agrupador (
-	cod_agrupador,
-	nom_agrupador,
-	cod_tipo_agrupador)
-values (
-	10,
-	'Menú: Garbanzos con longaniza y postre',
-	1);
-
-insert into agrupador (
-	cod_agrupador,
-	nom_agrupador,
-	cod_tipo_agrupador)
-values (
-	11,
-	'Menú: Pasta con salsa de champiñón, aceitunas, perejil y postre',
-	1);
-
-insert into agrupador (
-	cod_agrupador,
-	nom_agrupador,
-	cod_tipo_agrupador)
-values (
-	12,
-	'Menú: Pescado al horno y puré de papas y postre',
-	1);
-
-insert into agrupador (
-	cod_agrupador,
-	nom_agrupador,
-	cod_tipo_agrupador)
-values (
-	13,
-	'Menú: Vacuno Bourguignon, papas asadas y postre',
-	1);
-
-insert into agrupador (
-	cod_agrupador,
-	nom_agrupador,
-	cod_tipo_agrupador)
-values (
-	14,
-	'Menú: Zapallo italiano relleno o guiso, arroz y postre',
-	1);
+	'Almuerzo personal de servicio');
 /* Fin tabla: agrupador */
 
 /* Inicio tabla: carrera */

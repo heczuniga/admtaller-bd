@@ -6,8 +6,6 @@ drop table config_taller cascade;
 
 drop table agrupador cascade;
 
-drop table tipo_agrupador cascade;
-
 drop table det_regis_taller cascade;
 
 drop table regis_taller cascade;
@@ -71,16 +69,9 @@ create table estado_proceso (
     primary key (cod_estado_proceso)
 ) comment "Tabla que contiene los estados psobles de proceso de distintos registros";
 
-create table tipo_agrupador (
-    cod_tipo_agrupador  tinyint not null comment "Código del tipo de agrupador de productos",
-    nom_tipo_agrupador  varchar(30) not null comment "Nombre del tipo de agrupador de productos",
-    primary key (cod_tipo_agrupador)
-) comment "Tabla que contiene los tipos de agrupadores de productos en la especificación de un taller";
-
 create table agrupador (
     cod_agrupador  tinyint not null comment "Código del agrupador de productos",
     nom_agrupador  varchar(100) not null comment "Nombre del agrupador de productos",
-    cod_tipo_agrupador  tinyint not null comment "Código del tipo de agrupador de productos",
     primary key (cod_agrupador)
 ) comment "Tabla que contiene los agrupadores de productos en la especificación de un taller";
 
@@ -216,10 +207,6 @@ create table usuario (
 alter table unidad_medida
     add constraint unidadmedida_unidadmedida_fk foreign key (cod_unidad_medida_base)
         references unidad_medida (cod_unidad_medida);
-
-alter table agrupador
-    add constraint tipoagrupador_agrupador_fk foreign key (cod_tipo_agrupador)
-        references tipo_agrupador (cod_tipo_agrupador);
 
 alter table asign
     add constraint asign_carrera_fk foreign key (cod_carrera)
