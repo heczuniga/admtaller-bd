@@ -82294,6 +82294,8 @@ values (
 	1749,
 	1,
 	1);
+
+
 /* Fin tabla: config_taller */
 
 commit;
