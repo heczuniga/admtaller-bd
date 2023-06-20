@@ -308,7 +308,7 @@ values (
 	15,
 	'v.fuentealbav@profesor.duoc.cl',
 	'dbb8d24a3166d17cd46539f4dca51ac945174b0ed8491859f690ddb24fe6cb74fbbf3338766d273903b8748da32c5a9c645ff0a2013c7412edc38b64cf8f2ec0',
-	'Fuentealva',
+	'Fuentealba',
 	'Vargas',
 	'Víctor',
 	'Víctor',
