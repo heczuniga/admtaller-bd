@@ -10,22 +10,6 @@ values (
 	'2023');
 /* Fin tabla: param */
 
-/* Inicio tabla: estado_proceso */
-insert into estado_proceso (
-	cod_estado_proceso,
-	nom_estado_proceso)
-values (
-	1,
-	'Sin registro de ejecución');
-
-insert into estado_proceso (
-	cod_estado_proceso,
-	nom_estado_proceso)
-values (
-	2,
-	'Registrado');
-/* Fin tabla: estado_proceso */
-
 /* Inicio tabla: agrupador */
 insert into agrupador (
 	cod_agrupador,

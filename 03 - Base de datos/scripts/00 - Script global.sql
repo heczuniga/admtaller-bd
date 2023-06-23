@@ -1,4 +1,5 @@
 
+
 /* Inicio sección drop table */
 drop table param cascade;
 
@@ -36,8 +37,6 @@ drop table asign cascade;
 
 drop table carrera cascade;
 
-drop table estado_proceso cascade;
-
 /* Fin sección drop table */
 
 /* Inicio sección create table */
@@ -62,12 +61,6 @@ create table config_perfil (
     cod_item_menu  varchar(4) not null comment "el código del ítem de menú asociado al perfil",
     primary key (cod_perfil, cod_item_menu)
 ) comment "tabla que almacena la configuración de un perfil de acuerdo a las opciones de menú disponibles";
-
-create table estado_proceso (
-    cod_estado_proceso  tinyint not null comment "Código del estado de proceso",
-    nom_estado_proceso  varchar(30) not null comment "Nombre del estado de proceso",
-    primary key (cod_estado_proceso)
-) comment "Tabla que contiene los estados psobles de proceso de distintos registros";
 
 create table agrupador (
     cod_agrupador  tinyint not null comment "Código del agrupador de productos",
@@ -167,7 +160,7 @@ create table regis_taller (
     seccion             tinyint not null comment "La sección programada para el taller",
     id_taller           int not null comment "El identificador único del taller",
     id_usuario          tinyint not null comment "El profesor que dictó el taller",
-    cod_estado_proceso  tinyint not null default 1 comment "Indicador del estado de proceso del registro",
+    obs                 varchar(500) not null comment "Eventuales comentarios a la ejecución del taller" default 'Sin comentarios',
     primary key (fecha, ano_academ, cod_periodo_academ, sigla, seccion, id_taller)
 ) comment "Tabla que contiene los registros de ejecución de los talleres";
 
@@ -268,10 +261,6 @@ alter table regis_taller
     add constraint registaller_usuario_fk foreign key (id_usuario)
         references usuario (id_usuario);
 
-alter table regis_taller
-    add constraint registaller_estadoproceso_fk foreign key (cod_estado_proceso)
-        references estado_proceso (cod_estado_proceso);
-
 alter table taller
     add constraint taller_asign_fk foreign key (sigla)
         references asign (sigla);
@@ -308,22 +297,6 @@ values (
 	'Año académico vigente',
 	'2023');
 /* Fin tabla: param */
-
-/* Inicio tabla: estado_proceso */
-insert into estado_proceso (
-	cod_estado_proceso,
-	nom_estado_proceso)
-values (
-	1,
-	'Sin registro de ejecución');
-
-insert into estado_proceso (
-	cod_estado_proceso,
-	nom_estado_proceso)
-values (
-	2,
-	'Registrado');
-/* Fin tabla: estado_proceso */
 
 /* Inicio tabla: agrupador */
 insert into agrupador (
@@ -1345,6 +1318,8 @@ values (
 commit;
 
 
+
+
 /* Inicio tabla: usuario */
 insert into usuario (
 	id_usuario,
@@ -1359,7 +1334,7 @@ insert into usuario (
 values (
 	1,
 	'admin@duoc.cl',
-    'c16fd958b85a1c94d872c219ea06ce8e80223239b1fcefb92ad978445ef095507244be44caae1d766e277b072c184cb3ffe4d0610716e989b2fe5a7c97bf3144', /* SD:72-03 */
+	'c16fd958b85a1c94d872c219ea06ce8e80223239b1fcefb92ad978445ef095507244be44caae1d766e277b072c184cb3ffe4d0610716e989b2fe5a7c97bf3144',
 	'Administrador',
 	'',
 	'del sistema',
@@ -1508,7 +1483,7 @@ values (
 	'c.valenzuelair@profesor.duoc.cl',
 	'dbb8d24a3166d17cd46539f4dca51ac945174b0ed8491859f690ddb24fe6cb74fbbf3338766d273903b8748da32c5a9c645ff0a2013c7412edc38b64cf8f2ec0',
 	'Valenzuela',
-	'Irrazabal',
+	'Irrázabal',
 	'Carolina',
 	'Carolina',
 	2,
@@ -1675,7 +1650,7 @@ values (
 	16,
 	'j.premolo@profesor.duoc.cl',
 	'dbb8d24a3166d17cd46539f4dca51ac945174b0ed8491859f690ddb24fe6cb74fbbf3338766d273903b8748da32c5a9c645ff0a2013c7412edc38b64cf8f2ec0',
-	'Premolo',
+	'Prémolo',
 	'Yergues',
 	'Juan',
 	'Juan',
@@ -1801,7 +1776,7 @@ values (
 	22,
 	'm.gutierrez2@profesor.duoc.cl',
 	'dbb8d24a3166d17cd46539f4dca51ac945174b0ed8491859f690ddb24fe6cb74fbbf3338766d273903b8748da32c5a9c645ff0a2013c7412edc38b64cf8f2ec0',
-	'Gutierrez',
+	'Gutiérrez',
 	'Cortés',
 	'Mauricio',
 	'Mauricio',
@@ -1810,7 +1785,6 @@ values (
 /* Fin tabla: usuario */
 
 commit;
-
 
 
 /* Inicio tabla: taller */
@@ -112248,6 +112222,7 @@ values (
 commit;
 
 
+
 /* Inicio tabla: prog_taller */
 insert into prog_taller (
 	fecha,
@@ -112298,7 +112273,7 @@ values (
 	'ABT3131',
 	'3',
 	'84',
-	3);
+	5);
 
 insert into prog_taller (
 	fecha,
@@ -112349,7 +112324,7 @@ values (
 	'ABT3131',
 	'3',
 	'87',
-	3);
+	7);
 
 insert into prog_taller (
 	fecha,
@@ -112400,7 +112375,7 @@ values (
 	'ABT3131',
 	'3',
 	'90',
-	3);
+	5);
 
 insert into prog_taller (
 	fecha,
@@ -112434,7 +112409,7 @@ values (
 	'ABT3131',
 	'3',
 	'92',
-	3);
+	5);
 
 insert into prog_taller (
 	fecha,
@@ -112485,7 +112460,7 @@ values (
 	'ABT3131',
 	'3',
 	'95',
-	3);
+	8);
 
 insert into prog_taller (
 	fecha,
@@ -112536,7 +112511,7 @@ values (
 	'ABT3131',
 	'3',
 	'98',
-	3);
+	10);
 
 insert into prog_taller (
 	fecha,
@@ -112556,5 +112531,202 @@ values (
 	3);
 /* Fin tabla: prog_taller */
 
+commit;
+
+
+/* Inicio tabla: regis_taller */
+insert into regis_taller (
+    fecha,ano_academ,
+    cod_periodo_academ,
+    sigla,
+    seccion,
+    id_taller,
+    id_usuario,
+    obs) 
+values (
+    '2023-03-06',
+    2023,
+    1,
+    'ABT3131',
+    3,
+    82,
+    3,
+    'Menta llegó en malas condiciones');
+
+insert into regis_taller (
+    fecha,ano_academ,
+    cod_periodo_academ,
+    sigla,
+    seccion,
+    id_taller,
+    id_usuario,
+    obs) 
+values (
+    '2023-03-14',
+    2023,
+    1,
+    'ABT3131',
+    3,
+    83,
+    3,
+    'Sin observaciones');
+insert into regis_taller (
+    fecha,ano_academ,
+    cod_periodo_academ,
+    sigla,
+    seccion,
+    id_taller,
+    id_usuario,
+    obs) 
+values (
+    '2023-03-23',
+    2023,
+    1,
+    'ABT3131',
+    3,
+    84,
+    5,
+    'Preferentemente limones deben ser pica que es lo más común');
+insert into regis_taller (
+    fecha,ano_academ,
+    cod_periodo_academ,
+    sigla,
+    seccion,
+    id_taller,
+    id_usuario,
+    obs) 
+values (
+    '2023-03-30',
+    2023,
+    1,
+    'ABT3131',
+    3,
+    85,
+    3,
+    'Sin observaciones');
+insert into regis_taller (
+    fecha,ano_academ,
+    cod_periodo_academ,
+    sigla,
+    seccion,
+    id_taller,
+    id_usuario,
+    obs) 
+values (
+    '2023-04-06',
+    2023,
+    1,
+    'ABT3131',
+    3,
+    86,
+    3,
+    'Vodka insuficiente');
+insert into regis_taller (
+    fecha,ano_academ,
+    cod_periodo_academ,
+    sigla,
+    seccion,
+    id_taller,
+    id_usuario,
+    obs) 
+values (
+    '2023-04-14',
+    2023,
+    1,
+    'ABT3131',
+    3,
+    87,
+    7,
+    'Sin observaciones');
+insert into regis_taller (
+    fecha,ano_academ,
+    cod_periodo_academ,
+    sigla,
+    seccion,
+    id_taller,
+    id_usuario,
+    obs) 
+values (
+    '2023-04-17',
+    2023,
+    1,
+    'ABT3131',
+    3,
+    88,
+    3,
+    'Sin observaciones');
+insert into regis_taller (
+    fecha,ano_academ,
+    cod_periodo_academ,
+    sigla,
+    seccion,
+    id_taller,
+    id_usuario,
+    obs) 
+values (
+    '2023-04-24',
+    2023,
+    1,
+    'ABT3131',
+    3,
+    89,
+    3,
+    'Sin observaciones');
+insert into regis_taller (
+    fecha,ano_academ,
+    cod_periodo_academ,
+    sigla,
+    seccion,
+    id_taller,
+    id_usuario,
+    obs) 
+values (
+    '2023-05-02',
+    2023,
+    1,
+    'ABT3131',
+    3,
+    90,
+    5,
+    'Sin observaciones');
+insert into regis_taller (
+    fecha,ano_academ,
+    cod_periodo_academ,
+    sigla,
+    seccion,
+    id_taller,
+    id_usuario,
+    obs) 
+values (
+    '2023-05-10',
+    2023,
+    1,
+    'ABT3131',
+    3,
+    91,
+    3,
+    'Se solicitó pisco artesanal peruano y llegó Cochihuaz!');
+/* Inicio tabla: regis_taller */
 
 commit;
+
+
+/* Inicio tabla: det_regis_taller */
+/* Script para generar datos de detalle de ejecución de talleres con precios un 10% menos */
+insert into det_regis_taller
+select rt.fecha as fecha,
+	rt.ano_academ as ano_academ,
+    rt.cod_periodo_academ as cod_periodo_academ,
+    rt.sigla as sigla,
+    rt.seccion as seccion,
+    rt.id_taller as id_taller,
+    ct.id_producto as id_producto,
+    0.9 * p.precio as precio,
+    ct.cantidad as cantidad
+from regis_taller rt
+join config_taller ct on ct.id_taller = rt.id_taller
+join producto p on ct.id_producto = p.id_producto;
+/* Fin tabla: det_regis_taller */
+
+commit;
+

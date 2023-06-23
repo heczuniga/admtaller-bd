@@ -36,8 +36,6 @@ drop table asign cascade;
 
 drop table carrera cascade;
 
-drop table estado_proceso cascade;
-
 /* Fin sección drop table */
 
 /* Inicio sección create table */
@@ -62,12 +60,6 @@ create table config_perfil (
     cod_item_menu  varchar(4) not null comment "el código del ítem de menú asociado al perfil",
     primary key (cod_perfil, cod_item_menu)
 ) comment "tabla que almacena la configuración de un perfil de acuerdo a las opciones de menú disponibles";
-
-create table estado_proceso (
-    cod_estado_proceso  tinyint not null comment "Código del estado de proceso",
-    nom_estado_proceso  varchar(30) not null comment "Nombre del estado de proceso",
-    primary key (cod_estado_proceso)
-) comment "Tabla que contiene los estados psobles de proceso de distintos registros";
 
 create table agrupador (
     cod_agrupador  tinyint not null comment "Código del agrupador de productos",
@@ -167,7 +159,7 @@ create table regis_taller (
     seccion             tinyint not null comment "La sección programada para el taller",
     id_taller           int not null comment "El identificador único del taller",
     id_usuario          tinyint not null comment "El profesor que dictó el taller",
-    cod_estado_proceso  tinyint not null default 1 comment "Indicador del estado de proceso del registro",
+    obs                 varchar(500) not null comment "Eventuales comentarios a la ejecución del taller" default 'Sin observaciones',
     primary key (fecha, ano_academ, cod_periodo_academ, sigla, seccion, id_taller)
 ) comment "Tabla que contiene los registros de ejecución de los talleres";
 
@@ -267,10 +259,6 @@ alter table regis_taller
 alter table regis_taller
     add constraint registaller_usuario_fk foreign key (id_usuario)
         references usuario (id_usuario);
-
-alter table regis_taller
-    add constraint registaller_estadoproceso_fk foreign key (cod_estado_proceso)
-        references estado_proceso (cod_estado_proceso);
 
 alter table taller
     add constraint taller_asign_fk foreign key (sigla)

@@ -49,7 +49,7 @@ values (
 	'ABT3131',
 	'3',
 	'84',
-	3);
+	5);
 
 insert into prog_taller (
 	fecha,
@@ -100,7 +100,7 @@ values (
 	'ABT3131',
 	'3',
 	'87',
-	3);
+	7);
 
 insert into prog_taller (
 	fecha,
@@ -151,7 +151,7 @@ values (
 	'ABT3131',
 	'3',
 	'90',
-	3);
+	5);
 
 insert into prog_taller (
 	fecha,
@@ -185,7 +185,7 @@ values (
 	'ABT3131',
 	'3',
 	'92',
-	3);
+	5);
 
 insert into prog_taller (
 	fecha,
@@ -236,7 +236,7 @@ values (
 	'ABT3131',
 	'3',
 	'95',
-	3);
+	8);
 
 insert into prog_taller (
 	fecha,
@@ -287,7 +287,7 @@ values (
 	'ABT3131',
 	'3',
 	'98',
-	3);
+	10);
 
 insert into prog_taller (
 	fecha,
