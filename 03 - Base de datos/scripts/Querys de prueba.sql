@@ -1,4 +1,18 @@
 
+/* Querys para prueba de registro */
+
+/* Cantidad de registros de docentes */
+select count(*)
+from regis_taller;
+
+/* Cantidad de productos registrados */
+select count(*)
+from det_regis_taller;
+
+
+
+
+/* Querys de prueba */
 select *
 from config_taller
 where cod_agrupador <> 0;
